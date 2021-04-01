@@ -2,26 +2,29 @@
 body {
     background-color: #f8f8f8;
     color: #333;
-    font-family: Lato, sans-serif;
+    font-family: "Lato", sans-serif;
 }
-.aaa {
+.main__title {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
-.aaa img {
+.main__title img {
     width: 100%;
 }
-.aaa .more_inf {
+.main__title .main__info {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.aaa { text-align: center;
+
+.main__title {
+     text-align: center;
 }
+
 }
-.centered-main-page-element {
+.main__block {
     display: block;
     width: 500px;
     margin: 0 auto 0;
@@ -31,18 +34,20 @@ body {
     display: inline-block;
     flex-grow: 1
 }
-.task-row-wrapper {
+.task__wrapper {
     display: flex;
 }
 ul {
-    margin:0;
+    margin: 0;
     padding: 0px;
 }
-li, h3 {
-    list-style:none;
+li,
+ h3 {
+    list-style: none;
 }
-input,button{
-    outline:none;
+input,
+button{
+    outline: none;
 }
 button {
     background: none;
@@ -50,15 +55,15 @@ button {
     color: #888;
     font-size: 15px;
     width: 60px;
-    font-family: Lato, sans-serif;
+    font-family: " Lato", sans-serif;
     cursor: pointer;
 }
 button:hover {
-    color: #3a3A3a;
+    color: #3a3a3a;
 }
 /* Heading */
 h3,
-label[for='new-task'] {
+label[for="new-task"] {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -73,7 +78,7 @@ input[type="text"] {
     line-height: 18px;
     height: 21px;
     padding: 0 9px;
-    border: 1px solid #dDd;
+    border: 1px solid #ddd;
     background: #FFF;
     border-radius: 6px;
     font-family: Lato, sans-serif;
@@ -84,15 +89,15 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for='new-task'] {
+label[for="new-task"] {
     display: block;
     margin: 0 0 20px;
 }
-input#new-task {
+#new-task {
     width: 318px;
 }
 p > button:hover {
-    color: #0FC57C;
+    color: #0fc57c;
 }
 
 /* Task list */
@@ -100,7 +105,6 @@ li {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -118,11 +122,11 @@ li > label {
     font-size: 18px;
     width: 226px;
 }
-li >    input[type="text"] {
+li > input[type="text"] {
     width: 226px
 }
 li > button.delete:hover {
-    color: #CF2323;
+    color: #cf2323;
 }
 button.delete img {
     height: 2em;
@@ -134,21 +138,21 @@ button.delete img:hover {
 }
 
 /* Completed */
-ul#completed-tasks label {
-    text-decoration: line-through
+#completed__tasks label {
+    text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
-    display:none
+ul li input[type="text"] {
+    display: none;
 }
 
-ul li.editMode input[type=text] {
-    display:inline-block;
-    width:224px
+ul li.edit__mode input[type="text"] {
+    display: inline-block;
+    width: 224px;
 }
 
-ul li.editMode label {
-    display:none;
+ul li.edit__mode label {
+    display: none;
 }
